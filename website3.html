@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>
+		Website 3
+	</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet"
+
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-3-typeahead/4.0.2/bootstrap3-typeahead.min.js"></script>
+
+</head>
+<body>
+
+	<style>
+
+	body
+	{
+		position: relative;
+	}
+	#section1
+	{
+		padding-top: 100px;
+		height: 500px;
+		color: black;
+		background-color: indianred;
+	}
+
+	#section2
+	{
+		padding-top: 100px;
+		height: 500px;
+		color: black;
+		background-color: darkred;
+	}
+
+	#section3
+	{
+		padding-top: 100px;
+		height: 500px;
+		color: black;
+		background-color: blue;
+	}
+
+	#section4
+	{
+		padding-top: 100px;
+		height: 500px;
+		color: black;
+		background-color: greenyellow;
+	}
+	.affix
+	{
+		top: 0;
+		width: 100%;
+		z-index: 9999 !important;
+	}
+	.navbar {
+margin-bottom: 0px;
+}
+
+.affix + .container-fluid
+{
+	position: relative;
+	top: 50px;
+}
+
+</style>
+
+</head>
+<body data-spy = "scroll" data-target = ".navbar" data-offset = "20">
+	<div class="container-fluid" style="height:100px;">
+
+		<h1 class="text-center">
+			<b>
+				<span class="glyphicon glyphicon-star-empty text-info">	
+				</span>
+				Sunshine Tours and Travels
+				<span class="glyphicon glyphicon-star-empty text-info">
+				</span>
+			</b>
+		</h1>
+
+<h3 class="text-center text-info">
+<b>
+Get Your Best Packages Here !!
+</b>
+</h3>
+<br>
+<br>
+</div>
+<br>
+<br>
+
+        <nav class = "navbar navbar-inverse" data-spy="affix" data-offset-top="150">
+<div class = "container">
+<div class = "navbar-header">
+<button class = "navbar-toggle" data-toggle = "collapse" data-target = "#mynavbar">
+<span class = "icon-bar"></span>
+<span class = "icon-bar"></span>
+<span class = "icon-bar"></span>
+</button>
+
+<a class = "navbar-brand" href = "#">Sunshine Tours and Travels</a>
+</div>
+
+<div>
+<div class = "collapse navbar-collapse" id = "mynavbar">
+<ul class = "nav navbar-nav">
+<li>
+<a href = "#section1">Home</a>
+</li>
+
+<li class = "dropdown">
+<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">About Us
+<span class = "caret">
+</span>
+</a>
+
+<ul class = "dropdown-menu">
+<li>
+<a href = "#section2.1">Section2.1</a>
+</li>
+
+<li>
+<a href = "#section2.2">Section2.2</a>
+</li>
+</ul>
+</li>
+
+<li>
+<a href = "#section3">Contact Us</a>
+</li>
+
+<li>
+<a href = "#section4">Services</a>
+</li>
+<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+     <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</ul>
+</div>
+</div>
+</div>
+</nav>
+    <br><br>
+
+    <div class="container">
+<div class="tabbable">
+<ul class="nav nav-tabs">
+<li class="active">
+<a href="#tab1" data-toggle="tab">TRAVELLING PLACES</a>
+</li>
+<li>
+<a href="#tab2" data-toggle="tab">VEHICLE</a>
+</li>
+
+</ul>
+<div class="tab-content">
+<div class="tab-pane active" id="tab1">
+<form role="form">
+<div class="form-group">
+<input class="form-control" id="searchstate" placeholder="Type Places">
+</div>
+</form>
+</div>
+
+
+<div class="tab-pane" id="tab2">
+<form role="form">
+<div class="form-group">
+<input class="form-control" id="city" placeholder="Type Vehicle">
+</div>
+</form>
+</div>
+
+</div>
+</div>
+</div>
+
+</body>
+
+<script>
+$(document).ready(function()
+{
+var states = ['Punjab','Rajasthan','Gujarat','Haryana','Maharashtra','Uttarakhand','Madhya Pradesh','Uttar Pradesh'];
+var vehicles = ['Thar','Wrangler','Fortuner','Endavour','Nano','Maruti 800','Scooty Pept','Atlas Cycle'];
+$('#searchstate').typeahead({source:states});
+$('#city').typeahead({source:vehicles});
+});
+
+</script>
+    <div class = "container-fluid">
+		<div class = "row">
+			<div class = "col" style = "background-color: silver;">
+				<br>
+
+				
+				<h1>
+				<center>
+					<b>SUNSHINE TOURS AND TRAVELS</b>
+					<center><br></center>
+				</center>
+       </h1>
+
+       <ul class = "nav nav-tabs nav justified">
+		<li>
+			<a href = "#">
+				<span class = "glyphicon glyphicon-user"></span>
+			HOME PAGE
+		</a>
+	</li>
+			
+			<li class = "dropdown">
+				<a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">
+					CONTACT US
+					<span class = "caret"></span>
+				</a>
+				<ul class = "dropdown-menu">
+					<li><a href = "#">MOBILE NO.
+						<span class = "glyphicon glyphicon-phone"></span>
+						</a></li>
+					<li><a href = "#">E-MAIL
+						<span class = "glyphicon glyphicon-envelope"></span>
+						</a></li>
+					<li><a href = "#">TOLL FREE NO.
+						<span class = "glyphicon glyphicon-earphone"></span>
+						</a></li>
+					<li><a href = "#">LANDLINE NO.
+						<span class = "glyphicon glyphicon-phone-alt"></span>
+						</a></li>
+				</ul>
+
+			<li class = "dropdown">
+			    <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">
+			        ABOUT US
+			        <span class = "caret"></span>
+			    </a>
+
+                <ul class = "dropdown-menu">
+                	<li><a href = "#">CHAIRMAIN</a></li>
+                	<li><a href = "#">V-CHAIRMAN</a></li>
+                	<li><a href = "#">DEVELOPER</a></li>
+                	<li><a href = "#">OTHERS</a></li>
+                </ul>
+            </li>
+        </li>
+                <li><a href = "#">INDIA HOLIDAYS</a></li>
+                <li><a href = "#">INT. HOLIDAYS</a></li>
+                <li><a href = "#">HOTELS
+                	<span class = "glyphicon glyphicon-home"></span>
+                	</a></li>
+                <li><a href = "#">OFFERS</a></li>
+                <li><a href = "#">FLIGHTS
+                	<span class = "glyphicon glyphicon-plane"></span>
+                	</a></li>
+                <li><a href = "#">SHORT BREAKS</a></li>
+                <li><a href = "#">ON THE GO
+                	<span class = "glyphicon glyphicon-picture"></span>
+                	</a></li>
+            </ul>
+
+       <div class="container">  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="images57.jpg" alt="Image" width="100%">
+      </div>
+
+      <div class="item">
+        <img src="images58.jpg" alt="Image" width="100%">
+      </div>
+    
+      <div class="item">
+        <img src="images59.jpg" alt="Image" width="100%">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div class = "container">
+	<h3>
+		<b>
+		India Tours Packages
+	</b>
+	</h3>
+</div>
+
+<div class = "container">
+	<h5>
+		You have booked your flights and hotels, now the next thing you seek to do is scour through tour packages and book one. If it is domestically you plan to travel, you will find innumerable holiday packages, but very few that match your requirement, or for that matter your interests and personality. Enter Yatra and you can now choose from an array of holiday packages in India that span across the length and breadth of the country, taking you into breathtaking tea estates, hill resorts to splendid backwater retreats. By booking your India tour with Yatra, you get to customise your holiday to suit your requirement, and more importantly can avail some attractive discounts and offers from time to time.
+
+		<br>
+		<br>
+
+		<b><h3>Here are the top reasons you should book your tour packages in India with Yatra:</b></h3>
+		
+		<br>
+
+Exciting holiday offers and discounts
+As you browse through multiple India tour packages, you will find those on Yatra that come with attractive discounts. Presently, there are Andaman packages starting from INR 15,999 valid for a limited period of time. There are also great offers on Kerala, Himachal Pradesh and North East India packages. You can even look up the ‘workstation packages’ where you can enjoy scenic vistas by taking a break from the city and choose to work or even chill from an exotic location in the country. Yatra also offers plenty of discounts on weekend getaway packages, outside of family holiday discounts, and honeymoon special deals.
+
+<br>
+<br>
+
+<b><h3>Holiday by theme:</b></h3>
+
+<br>
+
+Another interesting way of searching a holiday package is by theme. On Yatra, depending on your interest area you can now search a holiday package. The themes comprise wildlife, family, religious, honeymoon, weekend getaways, beach, summer, winter, luxury and adventure packages. Among the top honeymoon packages are those in Manali, Shimla, Kashmir, Munnar, Srinagar, Gangtok, Darjeeling, Gulmarg, Jaipur, Thekkady, Alleppey, and Pahalgam. A wildlife lover can explore from a flurry of packages to the Jim Corbett National Park, Kanha National Park, Bandhavgarh National Park, Pench National Park and several other comprising Periyar, Ooty and Jabalpur. Looking for exclusive winter holiday ideas in India? You will find those in Goa, Andaman, Kerala, Darjeeling and across Himachal.
+
+<br>
+<br>
+
+<b><h3>Popular domestic destinations:</b></h3>
+
+<br>
+
+Yatra covers a gamut of destinations across the country which includes all popular destinations frequented by majority of the tourists. Among them are Manali, Goa, Kashmir, Ooty, Kerala, Ladakh, Darjeeling, Shimla and Gangtok. There are some wonderful itineraries in each of these destinations with long as well as short stay options. These holiday packages are tailored to meet every tourists’ budget and caters to every category of travellers. You can choose from varying itineraries, depending on the activities you prefer to be a part of and also the price point. Look up the flight connectivity to your holiday destination and simply close your holiday package booking with Yatra.
+
+<br>
+<br>
+
+<b><h3>Honeymoon special deals:</b></h3>
+
+<br>
+
+You can choose from an array of domestic honeymoon packages that have been specially curated in keeping with your tastes as a couple and also to ensure maximum privacy. Each honeymoon package comes with options for sanitised stay, transfers, a whole lot of activities or things to do, while giving you the liberty to choose your activities depending on your convenience and preference. Most of these packages come at attractive discounts. You can avail some additional add-ons such as room upgrade to the next category, complimentary meal once a day, complimentary in-house activity at the hotel of stay, spa, laundry and meal discount coupons at the hotel of stay, early check-in and late check-out, complimentary candlelight dinner along with cake, flowers, bed decoration once during your stay.
+
+<br>
+<br>
+
+<b><h3>Family tours:</b></h3>
+
+<br>
+
+Yatra has exclusive family tours crafted in keeping with the needs of a family whether large or small, with children or the elderly. It is a great way to spend some quality time together in a great destination. You can choose from a bevy of hotel options and even destinations and get some wonderful discounts on your holiday. There are some long and short stay options in places like Himachal Pradesh, Kerala, Munnar, Kashmir, Srinagar, Tamil Nadu, Kochi, Gulmarg, Gangtok, Thekkady, Pahalgam including some self-drive family tours. Choose a destination depending on your weather and view preference and choose a hotel that perfectly sums up your mentality and enjoy your stay with your family.
+
+<br>
+<br>
+</h5>
+</div>
+
+<div class = "container">
+	<h3>
+		<b>
+			Popular Packages in India
+		</b>
+	</h3>
+</div>
+
+<div class = "container">
+	<table class="table table-bordered">
+    <thead>
+      <tr class = "success">
+        <th>North India</th>
+        <th>North East</th>
+        <th>East India</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class = "danger">
+        <td>
+        	<a href = "#" data-toggle="modal" data-target="#myrajasthan">Rajasthan</a>
+ 			<br>
+
+<div class="modal bg-info" id="myrajasthan" role="dialog">
+<div class="modal-dialog ">
+
+<div class="modal-content">
+
+<div class="modal-header"> 
+<button class="close" data-dismiss="modal">&times;</button>
+<h2 class="modal-title text-danger bg-info"><b>
+<h3 class = "text-center">Rajasthan</b></h2>
+</div>
+
+<div class="modal-body">
+
+	<table class = "table table-responsive">
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Maulin Rouge
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images17.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Notre-Dame Cathedral
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images18.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Sacre Coeur Basilica
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images19.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Louvre Museum
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images20.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Seine River
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images21.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Garnier Opera House
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images22.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+	</table>
+	
+<p class="text-left"> 1.PARIS IS KNOWN AS THE "CITY OF LIGHTS" ALL AROUND THE WORLD</p>
+<p class="text-left">2.WORLD'S LARGEST MUSEUM "THE LOUVRE" IS SITUATED IN PARIS</p>
+<p class="text-left">3.STATUE OF LIBERTY IS ALSO LOCATED IN PARIS</p>
+<p class="text-left">4.ADMIRE THE NOTRE-DAME CATHEDRAL OF PARIS</p>
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+        </td>
+
+        <td>
+        	<a href = "#" data-toggle="modal" data-toggle="modal" data-target="#mysikkim">Sikkim</a>
+ 			<br>
+
+<div class="modal bg-info" id="mysikkim" role="dialog">
+<div class="modal-dialog ">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<button class="close" data-dismiss="modal">&times;</button>
+<h2 class="modal-title text-success bg-warning"><b>
+<h3 class = "text-center">Sikkim</b></h3></h2>
+</div>
+
+<div class="modal-body">
+
+	<table class = "table table-responsive">
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Marina Bay Sands
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images23.jpg" height = "250px" width = "250px">
+			</td>
+
+		<td>
+			<h4 class = "text-center">
+				<u>
+					Botanic Gardens
+				</u>
+			</h4>
+
+			<img class = "img-fluid" src = "images24.jpg" height = "250px" width = "250px">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<h4 class = "text-center">
+				<u>
+					Orchard Road
+				</u>
+			</h4>
+
+			<img class = "img-fluid" src = "images25.jpg" height = "250px" width = "250px">
+		</td>
+
+		<td>
+			<h4 class = "text-center">
+				<u>
+					Singapore Flyer
+				</u>
+			</h4>
+
+			<img class = "img-fluid" src = "images26.jpg" height = "250px" width = "250px">
+		</td>
+	</tr>
+
+	<tr>
+		<td>
+			<h4 class = "text-center">
+				<u>
+					China Town
+				</u>
+			</h4>
+
+			<img class = "img-fluid" src = "images27.jpg" height = "250px" width = "250px">
+		</td>
+
+		<td>
+			<h4 class = "text-center">
+				<u>
+					Sentosa Island
+				</u>
+			</h4>
+
+			<img class = "img-fluid" src = "images28.jpg" height = "250px" width = "250px">
+		</td>
+	</tr>
+
+	</table>
+
+<p class="text-left"> 1.IT IS THE HOME TO THW WORLD'S FIRST NIGHT ZOO</p>
+<p class="text-left">2.IT IS THE CITY OF (MAN-MADE) WATERFALLS</p>
+<p class="text-left">3.SINGAPORE IS CONSIDERED AS ONE OF THE MOST GREENEST CITIES IN THE WORLD</p>
+<p class="text-left">4.SINGAPORE PIONEERED WORLD'S FIRST F1 NIGHT RACE</p>
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+        </td>
+
+        <td>
+        	<a href = "#" data-toggle="modal" data-target="#mydarjeeling">Darjeeling</a>
+ 			<br>
+
+<div class="modal bg-info" id="mydarjeeling" role="dialog">
+<div class="modal-dialog ">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<button class="close" data-dismiss="modal">&times;</button>
+<h2 class="modal-title text-success bg-warning"><b>
+<h3 class = "text-center">Darjeeling</b></h3></h2>
+</div>
+
+<div class="modal-body">
+
+	<table class = "table table-responsive">
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Merida
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images29.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Salamanca
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images30.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Cuenca
+					</u>
+				</h4>
+
+					<img class = "img-fluid" src = "images31.jpg" height = "250px" width = "250px">
+				</td>
+
+				<td>
+					<h4 class = "text-center">
+						<u>
+							Santiago de Compostela
+						</u>
+					</h4>
+
+					<img class = "img-fluid" src = "images32.jpg" height = "250px" width = "250px">
+				</td>
+			</tr>
+
+			<tr>
+				<td><h4 class = "text-center">
+					<u>
+						San Sebastian
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images33.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Barcelona
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images34.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+	</table>
+<p class="text-left"> 1.HOME FOR THE WORLD'S SECOND LARGEST SPOKEN LANGUAGE</p>
+<p class="text-left">2.IT HAS THE FIFTH LARGEST POPULATED COUNTRY IN THE EUROPE</p>
+<p class="text-left">3.THE "FIRST" NOVEL IN THE WORLD IS WRITTEN BY A SPANISH</p>
+<p class="text-left">4.THE WORLD FAMOUS "la-Tomatina" FESTIVAL IS ORIGANTED FROM SPAIN</p>
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+        </td>
+      </tr>
+
+      <tr class = "info">
+      	<td>
+      		<a href = "#" data-toggle="modal" data-target="#mymanali">Manali</a>
+ 			<br>
+
+<div class="modal bg-info" id="mymanali" role="dialog">
+<div class="modal-dialog ">
+
+<div class="modal-content">
+
+<div class="modal-header">
+<button class="close" data-dismiss="modal">&times;</button>
+<h2 class="modal-title text-success bg-warning"><b>
+<h3 class = "text-center">Manali</b></h3></h2>
+</div>
+
+<div class="modal-body">
+
+	<table class = "table table-responsive">
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Sydney Opera House
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images99.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Uluru-Kata Tjuta National Park
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images98.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Sydney Harbour Bridge
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images37.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Blue Mountains National Park
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images38.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Bondi Beach
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images39.jpg" height = "250px" width = "250px">
+			</td>
+
+			<td>
+				<h4 class = "text-center">
+					<u>
+						Daintree National Park
+					</u>
+				</h4>
+
+				<img class = "img-fluid" src = "images40.jpg" height = "250px" width = "250px">
+			</td>
+		</tr>
+
+	</table>
+
+<p class="text-left"> 1.IT IS ONE OF THE MOST VISITED PLACE IN THE WOLRD</p>
+<p class="text-left">2.AUSTRALIA'S NATIONAL ANIMAL IS KANGAROO</p>
+<p class="text-left">3.IT HAS THE LARGEST FOREST AREA COVERING COUNTRY IN THE WORLD</p>
+<p class="text-left">4.AUSTRALIA IS FAMOUS FOR IT'S BEACHES</p>
+</div>
+
+<div class="modal-footer">
+<button class="btn btn-danger" data-dismiss="modal"> Close</button>
+</div>
+</div>
+</div>
+</div>
+      	</td>
+
+
+      	<td><a href = "#" data-toggle = "modal" data-target = "#mygangtok">Gangtok</a>
+      		<br></td>
+
+      		<div class="modal bg-info" id="mygangtok" role="dialog">
+<div class="modal-dialog ">
+      	<td><button type="button" class="btn btn-link">Puri</button></td>
+      </tr>
+
+      <tr class = "warning">
+      	<td><button type="button" class="btn btn-link">Ladakh</button></td>
+      	<td><button type="button" class="btn btn-link">Arunachal Pradesh</button></td>
+      	<td><button type="button" class="btn btn-link">Odisha</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<div class = "container">
+	<table class="table table-bordered">
+    <thead>
+      <tr class = "success">
+        <th>Center India</th>
+        <th>South East</th>
+        <th>West India</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class = "danger">
+        <td><button type="button" class="btn btn-link">Khajuraho</button></td>
+        <td><button type="button" class="btn btn-link">Kerala</button></td>
+        <td><button type="button" class="btn btn-link">Goa</button></td>
+      </tr>
+
+      <tr class = "info">
+      	<td><button type="button" class="btn btn-link">Chattisgarh</button></td>
+      	<td><button type="button" class="btn btn-link">Andaman</button></td>
+      	<td><button type="button" class="btn btn-link">Shirdi</button></td>
+      </tr>
+
+      <tr class = "warning">
+      	<td><button type="button" class="btn btn-link">Gwalior</button></td>
+      	<td><button type="button" class="btn btn-link">Ooty</button></td>
+      	<td><button type="button" class="btn btn-link">Gujarat</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<div class = "container">
+	<h3>
+		<b>
+			India Tour Packages FAQ's
+		</b>
+	</h3>
+</div>
+
+<div class = "container">
+	<h5>
+		<b>
+			Q. Can I make changes to my domestic holiday package?
+		</b>
+
+		<br>
+
+<b>A.</b>
+ Yes, you can make changes to tour packages. Most online travel agents offer a wide range of customisable tour packages where you may choose transport, stay and sightseeing according to your taste and comfort. However, the itinerary of a group tour or a pre-set holiday package cannot be altered. Such itineraries are designed with fixed travel dates, and all services are on a sharing basis.
+
+<br>
+<br>
+
+<b>Q. Do I need to book my flight tickets separately?</b>
+
+<br>
+
+<b>A.</b> No, you don’t have to book the flights separately while making a booking of India tour packages. Your flight is a part of the itinerary, and it will be included in the cost of the package. However, some packages featured on the website might not include airfare. The price listing will either read 'airfare/flight optional' or 'airfare/flight inclusive'. With airfare/flight optional packages, you can decide if you want to take a package with or without airfare.
+
+<br>
+<br>
+
+<b>Q. What is the cancellation policy for holiday packages in India?</b>
+
+<br>
+
+<b>A.</b> The cancellation policy may differ depending on the package, the destination of travel and also on the day of cancellation prior to the journey. And, in case of ‘no show’ or if cancelled less than the minimum stipulated deadline, no refund will be offered. For best information, please check with your travel experts/travel advisors or call the customer service helpline number of your travel service provider.
+
+<br>
+
+
+</body>
+</html>
